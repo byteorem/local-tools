@@ -40,7 +40,7 @@ Finds the terminal commands to build, start, and stop the app, verifies them aga
 
 ### setup-local-db
 
-Builds a local database from the repo's own schema, seeds it with generated mock data, and points the app at it through an untracked override.
+For apps that use a database and define its schema in the repo. Creates a local database from that schema, fills it with generated mock data or data copied from an existing database, and points the app at it through an untracked override.
 
 ### setup-playwright
 
