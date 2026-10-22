@@ -17,6 +17,7 @@ Run the skills in order inside the repo you want to set up:
 
 ```
 /work-mode:setup-local-claude
+/work-mode:setup-tools
 /work-mode:setup-local-run
 /work-mode:setup-local-db
 /work-mode:setup-playwright
@@ -28,6 +29,10 @@ Run the skills in order inside the repo you want to set up:
 ### setup-local-claude
 
 Creates or extends `CLAUDE.local.md` and local `.claude/` config (`settings.local.json`, project skills, agents) with how to work with the repo on this machine, and keeps them untracked.
+
+### setup-tools
+
+Checks that the build tools, SDKs, runtimes, package managers, and CLIs the repo needs are installed and match its version pins, finds any that are installed but off PATH, and records how to call them. Installs nothing.
 
 ### setup-local-run
 

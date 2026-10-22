@@ -8,7 +8,7 @@
     {
       "name": "work-mode",
       "source": "./plugins/work-mode",
-      "description": "Guidance skills for setting up a repo for local agent work: CLAUDE.local.md and .claude config, local run, local database, playwright-cli, security scans."
+      "description": "Guidance skills for setting up a repo for local agent work: CLAUDE.local.md and .claude config, required tools, local run, local database, playwright-cli, security scans."
     }
   ]
 }
