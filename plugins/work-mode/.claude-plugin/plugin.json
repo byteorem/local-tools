@@ -1,0 +1,10 @@
+{
+  "name": "work-mode",
+  "version": "0.1.0",
+  "description": "Guidance skills for setting up a repo for local agent work: CLAUDE.local.md, local run, local database, playwright-cli.",
+  "author": { "name": "byteorem", "url": "https://github.com/byteorem" },
+  "homepage": "https://github.com/byteorem/work-mode",
+  "repository": "https://github.com/byteorem/work-mode",
+  "license": "MIT",
+  "keywords": ["claude-local", "local-dev", "database", "playwright"]
+}
