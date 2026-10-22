@@ -50,6 +50,7 @@ Ask before installing anything. Needs Node.js 18 or newer.
 ## Don't
 - Add Playwright config, packages, or tests to the repo.
 - Create or edit CLAUDE.md.
+- Stage or commit anything. Files this skill creates stay untracked, excluded through `.git/info/exclude`, until the user explicitly asks to commit them.
 
 ## Done when
 playwright-cli is installed, the app starts, one page opens on localhost, a screenshot shows it loaded, and `git status` lists nothing new.

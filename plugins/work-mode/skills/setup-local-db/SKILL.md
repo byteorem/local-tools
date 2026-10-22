@@ -31,3 +31,4 @@ Gives the app a local database built from the repo's own schema and filled with 
 - Run anything against a shared database.
 - Change the schema project or tracked config.
 - Create or edit CLAUDE.md.
+- Stage or commit anything. Files this skill creates stay untracked, excluded through `.git/info/exclude`, until the user explicitly asks to commit them.

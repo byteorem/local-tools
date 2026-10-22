@@ -2,7 +2,7 @@
 
 > Claude Code skills for setting up a repo so the agent can run, seed, and drive the app locally
 
-Each skill walks Claude through one setup step, shows you the plan before acting, and records the result in `CLAUDE.local.md`, which stays out of git. Nothing touches tracked files, shared databases, or credentials.
+Everything these skills set up is local to your machine. Each skill walks Claude through one setup step, shows you the plan before acting, and records the result in `CLAUDE.local.md`. Every file they create stays untracked through `.git/info/exclude` and is never committed unless you ask. Nothing touches tracked files, shared databases, or credentials.
 
 ## Install
 
@@ -26,7 +26,7 @@ Run the skills in order inside the repo you want to set up:
 
 ### setup-local-claude
 
-Creates or extends `CLAUDE.local.md` with how to work with the repo on this machine, and excludes it through `.git/info/exclude`.
+Creates or extends `CLAUDE.local.md` and local `.claude/` config (`settings.local.json`, project skills, agents) with how to work with the repo on this machine, and keeps them untracked.
 
 ### setup-local-run
 

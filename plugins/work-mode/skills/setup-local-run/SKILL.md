@@ -22,6 +22,7 @@ Gets the app building and running locally from the terminal, so the agent can st
 - If startup depends on a shared database or service, say so. Don't write to it.
 - Never record credentials.
 - Don't create or edit CLAUDE.md.
+- Don't stage or commit anything. Files this skill creates stay untracked, excluded through `.git/info/exclude`, until the user explicitly asks to commit them.
 
 ## Done when
 The agent builds the app, starts it, gets a response from the local URL, and stops it cleanly, all from the terminal.
