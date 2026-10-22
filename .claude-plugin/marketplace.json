@@ -2,13 +2,13 @@
   "name": "work-mode",
   "owner": { "name": "byteorem", "url": "https://github.com/byteorem" },
   "metadata": {
-    "description": "Skills for setting up a repo so Claude Code can run, seed, and drive the app locally."
+    "description": "Skills for setting up a repo so Claude Code can run, seed, drive, and scan the app locally."
   },
   "plugins": [
     {
       "name": "work-mode",
       "source": "./plugins/work-mode",
-      "description": "Guidance skills for setting up a repo for local agent work: CLAUDE.local.md and .claude config, local run, local database, playwright-cli."
+      "description": "Guidance skills for setting up a repo for local agent work: CLAUDE.local.md and .claude config, local run, local database, playwright-cli, security scans."
     }
   ]
 }

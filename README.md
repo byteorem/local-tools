@@ -1,8 +1,8 @@
 # work-mode
 
-> Claude Code skills for setting up a repo so the agent can run, seed, and drive the app locally
+> Claude Code skills for setting up a repo so the agent can run, seed, drive, and scan the app locally
 
-Everything these skills set up is local to your machine. Each skill walks Claude through one setup step, shows you the plan before acting, and records the result in `CLAUDE.local.md`. Every file they create stays untracked through `.git/info/exclude` and is never committed unless you ask. Nothing touches tracked files, shared databases, or credentials.
+Everything these skills set up is local to your machine. Each skill walks Claude through one setup step, shows you the plan before acting, and records the result in `CLAUDE.local.md` or a local project skill. Every file they create stays untracked through `.git/info/exclude` and is never committed unless you ask. Nothing touches tracked files, shared databases, or credentials.
 
 ## Install
 
@@ -20,6 +20,7 @@ Run the skills in order inside the repo you want to set up:
 /work-mode:setup-local-run
 /work-mode:setup-local-db
 /work-mode:setup-playwright
+/work-mode:setup-security-scan
 ```
 
 ## Skills
@@ -39,3 +40,7 @@ Builds a local database from the repo's own schema, seeds it with generated mock
 ### setup-playwright
 
 Installs [playwright-cli](https://github.com/microsoft/playwright-cli) globally if it's missing, then gets it driving the running app on localhost, read-only until a local database exists.
+
+### setup-security-scan
+
+Gets the security scanners already installed on the machine, such as gitleaks and Snyk, running against the repo, then writes an untracked `security-scan` project skill that reruns them and reports findings by severity with secrets redacted. Installs nothing and asks before any scan that uploads source.
