@@ -38,4 +38,4 @@ Builds a local database from the repo's own schema, seeds it with generated mock
 
 ### setup-playwright
 
-Gets [playwright-cli](https://github.com/microsoft/playwright-cli) driving the running app on localhost, read-only until a local database exists.
+Installs [playwright-cli](https://github.com/microsoft/playwright-cli) globally if it's missing, then gets it driving the running app on localhost, read-only until a local database exists.
