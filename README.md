@@ -49,3 +49,7 @@ Installs [playwright-cli](https://github.com/microsoft/playwright-cli) globally 
 ### setup-security-scan
 
 Gets the security scanners already installed on the machine, such as gitleaks and Snyk, running against the repo, then writes an untracked `security-scan` project skill that reruns them and reports findings by severity with secrets redacted. Installs nothing and asks before any scan that uploads source.
+
+### setup-machine
+
+Not tied to a repo. Makes a requested change to your user-level environment (shell, tools, runtimes, environment variables, Claude config), or audits it for duplicates, hardcoded paths, dead entries, and inconsistencies and proposes fixes. Shows each change before applying it, backs up what it edits, and stays out of admin and system-wide settings.
