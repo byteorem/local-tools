@@ -8,9 +8,9 @@ description: Use when setting up a repo so Claude can build, start, and stop the
 Gets the app building and running locally from the terminal, so the agent can start and stop it without an IDE.
 
 ## Approach
-1. Check CLAUDE.local.md for existing run steps. If they exist, verify them instead of starting over.
+1. Check CLAUDE.local.md for existing run steps. If they exist, verify them instead of starting over. If CLAUDE.local.md doesn't exist, run setup-local-claude first.
 2. Find how the app builds and starts: solution and project files, manifests, scripts, launch settings, README. State what you found.
-3. If the app only starts from an IDE, find the command-line equivalent: the build tool, plus the server the IDE launches. Ask before installing anything.
+3. If the app only starts from an IDE, find the command-line equivalent: the build tool, plus the server the IDE launches. Call tools the way CLAUDE.local.md records them. If a tool isn't recorded, is missing, or is the wrong version, run setup-tools. Ask before installing anything.
 4. Find what the app needs at startup: config, environment variables, a database, other services. Note which environment each one points at.
 5. Show the plan before running anything.
 6. Build, start the app in the background, and wait until the local URL responds.

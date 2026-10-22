@@ -7,10 +7,13 @@ description: Use when setting up a local database for a repo so the app can run 
 
 Gives the app a local database built from the repo's own schema and filled with mock data.
 
+## Before anything else
+The app must already run locally from the terminal, since the last step verifies against it. Read the build, start, stop, and URL steps from CLAUDE.local.md. If they're missing, run setup-local-run first.
+
 ## Approach
 1. Find where the schema lives: a database project, migrations, an ORM model, or a separate repo. If it's in another repo, ask where that repo is.
 2. Find how the app connects: which config file or setting holds the connection, and how it varies by environment. State what you found.
-3. Pick the local engine that matches what the app uses in its environments, and the repo's own deploy method for the schema (publish, migrate). Don't invent a new one.
+3. Pick the local engine that matches what the app uses in its environments, and the repo's own deploy method for the schema (publish, migrate). Don't invent a new one. If the engine or deploy tool isn't installed, run setup-tools rather than installing it.
 4. Show the plan before running anything.
 5. Build the database locally, then seed it (see Data).
 6. Point the app at it through a local-only override (see Config).

@@ -45,7 +45,7 @@ Ask before installing anything. Needs Node.js 18 or newer.
 
 ## Guardrails
 - Localhost only. Never point it at a shared environment.
-- Read-only flows until the app runs against a local database. No submits, saves, or deletes.
+- Read-only flows until the app runs against a local database set up by setup-local-db. No submits, saves, or deletes.
 
 ## Don't
 - Add Playwright config, packages, or tests to the repo.

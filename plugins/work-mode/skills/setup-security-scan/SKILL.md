@@ -21,7 +21,7 @@ Gets the installed scanners running against this repo, then writes a local `secu
 
 ## Output
 - Pick flags that print results to stdout and redact secrets. Don't pass report-file options.
-- If a tool still writes into the repo (a cache, report, or policy file), add that path to `.git/info/exclude` the way `.playwright-cli/` is handled: the shared git dir in a worktree, before the next run. Record the path in the project skill.
+- If a tool still writes into the repo (a cache, report, or policy file), add that path to `.git/info/exclude` (the shared git dir in a worktree) before the next run. Record the path in the project skill.
 
 ## The security-scan skill
 Write `.claude/skills/security-scan/SKILL.md`. It contains:
