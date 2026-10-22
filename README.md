@@ -1,4 +1,4 @@
-# work-mode
+# local-tools
 
 > Claude Code skills for setting up a repo so the agent can run, seed, drive, and scan the app locally
 
@@ -7,8 +7,8 @@ Everything these skills set up is local to your machine. Each skill walks Claude
 ## Install
 
 ```
-/plugin marketplace add byteorem/work-mode
-/plugin install work-mode@work-mode
+/plugin marketplace add byteorem/local-tools
+/plugin install local-tools@local-tools
 ```
 
 ## Usage
@@ -16,12 +16,12 @@ Everything these skills set up is local to your machine. Each skill walks Claude
 Run the skills in order inside the repo you want to set up:
 
 ```
-/work-mode:setup-local-claude
-/work-mode:setup-tools
-/work-mode:setup-local-run
-/work-mode:setup-local-db
-/work-mode:setup-playwright
-/work-mode:setup-security-scan
+/local-tools:setup-local-claude
+/local-tools:setup-tools
+/local-tools:setup-local-run
+/local-tools:setup-local-db
+/local-tools:setup-playwright
+/local-tools:setup-security-scan
 ```
 
 ## Skills

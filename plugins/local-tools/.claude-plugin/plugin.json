@@ -1,10 +1,10 @@
 {
-  "name": "work-mode",
+  "name": "local-tools",
   "version": "0.1.6",
   "description": "Guidance skills for setting up a repo for local agent work: CLAUDE.local.md and .claude config, required tools, local run, local database, playwright-cli, security scans. Plus user-level machine setup and cleanup.",
   "author": { "name": "byteorem", "url": "https://github.com/byteorem" },
-  "homepage": "https://github.com/byteorem/work-mode",
-  "repository": "https://github.com/byteorem/work-mode",
+  "homepage": "https://github.com/byteorem/local-tools",
+  "repository": "https://github.com/byteorem/local-tools",
   "license": "MIT",
   "keywords": ["claude-local", "local-dev", "database", "playwright", "security", "machine-setup"]
 }
